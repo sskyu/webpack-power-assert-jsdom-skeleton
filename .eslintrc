@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {},
+  "rules": {
+    "comma-dangle": [1, "never"],
+    "eqeqeq": [2, "smart"],
+    "func-names": 0,
+    "key-spacing": 0,
+    "space-before-function-paren": [2, "always"],
+    "no-else-return": 0,
+    "no-multi-spaces": 0,
+    "quotes": [2, "single"],
+    "one-var": 0
+  },
+  "ecmaFeatures": {
+    "modules": true
+  }
+}

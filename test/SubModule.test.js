@@ -1,5 +1,5 @@
 import assert from 'power-assert';
-import SubModule from '../src/js/submodule';
+import SubModule from '../src/js/SubModule';
 
 describe('SubModule', () => {
   let subModule;

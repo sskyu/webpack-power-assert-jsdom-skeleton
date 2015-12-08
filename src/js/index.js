@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import SubModule from './submodule';
 
 const subModule = new SubModule();

@@ -1,8 +1,7 @@
 import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const src = path.resolve(__dirname, '../../src');
-const dist = path.resolve(__dirname, '../../dist');
+export const src = path.resolve(__dirname, '../../src');
+export const dist = path.resolve(__dirname, '../../dist');
 
 export default {
   entry: [
@@ -24,10 +23,5 @@ export default {
   resolve: {
     extensions: ['', '.js']
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: `${src}/index.html`,
-      filename: 'index.html'
-    })
-  ]
+  plugins: []
 };

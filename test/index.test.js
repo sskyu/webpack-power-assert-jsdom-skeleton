@@ -1,11 +1,18 @@
 import assert from 'power-assert';
-import domUtil from './util/dom';
+import jsdomify from 'jsdomify';
 
 describe('index', () => {
-  const target = document.querySelector('#content');
+  let target;
 
+  before(() => {
+    jsdomify.create('<!doctype html><html><body><div id="content"></div></body></html>');
+    target = document.querySelector('#content');
+  });
   beforeEach(() => {
     target.innerHTML = '';
+  });
+  after(() => {
+    jsdomify.destroy();
   });
 
   it('Can render html', () => {

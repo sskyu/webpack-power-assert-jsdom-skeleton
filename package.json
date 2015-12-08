@@ -21,6 +21,7 @@
     "espower-babel": "^4.0.0",
     "html-webpack-plugin": "^1.7.0",
     "jsdom": "^7.2.0",
+    "jsdomify": "^1.0.2",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
     "webpack": "^1.12.9",
